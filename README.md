@@ -1,36 +1,55 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# > SYSTEM_INIT: [LEONARDO] // PORTFOLIO
 
-## Getting Started
+![Status](https://img.shields.io/badge/STATUS-COOKING-F7B500?style=for-the-badge&logo=hackclub)
+![Event](https://img.shields.io/badge/EVENT-FLAVORTOWN-EC3750?style=for-the-badge)
+![Tech](https://img.shields.io/badge/CORE-NEXT.JS-000000?style=for-the-badge&logo=next.js)
 
-First, run the development server:
+> **"A high-performance digital workspace merging Computer Science precision with F1-inspired aesthetics."**
+
+## 🏁 The Concept
+
+This project is a personal portfolio built for the **Hack Club Flavortown** event. The goal is to break away from standard, static resume websites. Inspired by the **Lando Norris** visual identity and my background in **Hardware & Automation**, this site functions as a digital "cockpit."
+
+It treats user skills as telemetry data and projects as engineering milestones, wrapped in a high-octane, neon-industrial UI.
+
+## ⚙️ Under the Hood (Tech Stack)
+
+Just as a car needs a reliable engine, this site is built on a modern, robust stack:
+
+* **Chassis (Framework):** [Next.js](https://nextjs.org/) (React)
+* **Aero Kit (Styling):** [Tailwind CSS](https://tailwindcss.com/)
+* **Suspension (Animations):** [Framer Motion](https://www.framer.com/motion/)
+* **Deploy:** Vercel
+
+## 🛠️ Features & Roadmap
+
+- [ ] **Phase 1: Setup**
+    - [x] Repository Initialization
+    - [ ] Next.js Environment Configuration
+    - [ ] Tailwind Design System (Colors: Neon Yellow/Void Black)
+
+- [ ] **Phase 2: The Cockpit (UI/UX)**
+    - [ ] "Telemetry" Skills Section (Data viz style)
+    - [ ] Project Gallery with "Blueprint" aesthetics
+    - [ ] Responsive Layout (Mobile/Desktop)
+
+- [ ] **Phase 3: Integration**
+    - [ ] Hardware/Automation Showcase
+    - [ ] Live Status API (Current coding activity)
+
+## ⚡ Ignition (How to Run)
+
+To start the engine locally:
 
 ```bash
+# Clone the repository
+git clone [https://github.com/](https://github.com/)Leonardo027/high-octane-portfolio.git
+
+# Enter the directory
+cd high-octane-portfolio
+
+# Install dependencies
+npm install
+
+# Start the dev server
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
-
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
-
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
-
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
