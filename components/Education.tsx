@@ -5,7 +5,7 @@ import { GraduationCap, Award, BookOpen } from "lucide-react";
 
 const education = [
     {
-        school: "FACULDADE (EM ANDAMENTO)",
+        school: "FEMA (Fundação Educacional do Município de Assis)",
         course: "Bacharelado em Ciência da Computação",
         period: "2025 - Presente",
         desc: "Aprofundamento em arquitetura de software, algoritmos complexos e gestão de projetos tecnológicos.",
