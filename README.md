@@ -1,55 +1,50 @@
-# > SYSTEM_INIT: [LEONARDO] // PORTFOLIO
+# ⚡ LEONARDO_OS [v1.0.0]
 
-![Status](https://img.shields.io/badge/STATUS-COOKING-F7B500?style=for-the-badge&logo=hackclub)
-![Event](https://img.shields.io/badge/EVENT-FLAVORTOWN-EC3750?style=for-the-badge)
-![Tech](https://img.shields.io/badge/CORE-NEXT.JS-000000?style=for-the-badge&logo=next.js)
+> "Não é apenas um portfólio. É um terminal interativo rodando na web."
 
-> **"A high-performance digital workspace merging Computer Science precision with F1-inspired aesthetics."**
+![Banner](https://socialify.git.ci/Leonardo027/high-octane-portfolio/image?description=1&font=KoHo&language=1&name=1&owner=1&pattern=Circuit%20Board&theme=Dark)
 
-## 🏁 The Concept
+## 🏴‍☠️ Sobre o Projeto
 
-This project is a personal portfolio built for the **Hack Club Flavortown** event. The goal is to break away from standard, static resume websites. Inspired by the **Lando Norris** visual identity and my background in **Hardware & Automation**, this site functions as a digital "cockpit."
+Este projeto transforma a experiência passiva de navegar em um portfólio numa experiência imersiva de "Hacker". Construído para o **Hack Club**, ele simula um sistema operacional completo no navegador.
 
-It treats user skills as telemetry data and projects as engineering milestones, wrapped in a high-octane, neon-industrial UI.
+Diferente de sites estáticos, este projeto implementa um **File System virtual**, **Emulação de Terminal** e **Renderização Gráfica em tempo real**.
 
-## ⚙️ Under the Hood (Tech Stack)
+### 🛠️ Tech Stack & Funcionalidades
 
-Just as a car needs a reliable engine, this site is built on a modern, robust stack:
+O projeto vai muito além de HTML/CSS. O "motor" do sistema inclui:
 
-* **Chassis (Framework):** [Next.js](https://nextjs.org/) (React)
-* **Aero Kit (Styling):** [Tailwind CSS](https://tailwindcss.com/)
-* **Suspension (Animations):** [Framer Motion](https://www.framer.com/motion/)
-* **Deploy:** Vercel
+- **Core:** Next.js 14 (App Router) & TypeScript.
+- **File System Virtual:** Lógica recursiva para navegação de pastas (`cd`, `ls`, `cat`) simulando uma árvore de diretórios real.
+- **Audio API:** Feedback sonoro (ASMR mecânico) acionado via eventos do DOM, sem latência.
+- **Canvas Rendering:** Efeito "Matrix Rain" processado quadro-a-quadro (60fps) usando a API nativa de Canvas 2D.
+- **Integração de API:** Comando `weather` que busca dados meteorológicos reais em tempo real.
+- **Easter Eggs:** Modo `sudo` com autenticação simulada e segredos escondidos.
 
-## 🛠️ Features & Roadmap
+## 🚀 Comandos Disponíveis
 
-- [ ] **Phase 1: Setup**
-    - [x] Repository Initialization
-    - [ ] Next.js Environment Configuration
-    - [ ] Tailwind Design System (Colors: Neon Yellow/Void Black)
+Ao acessar o terminal, o usuário pode interagir com:
 
-- [ ] **Phase 2: The Cockpit (UI/UX)**
-    - [ ] "Telemetry" Skills Section (Data viz style)
-    - [ ] Project Gallery with "Blueprint" aesthetics
-    - [ ] Responsive Layout (Mobile/Desktop)
+| Comando | Descrição |
+| :--- | :--- |
+| `ls` | Lista os arquivos e pastas do diretório atual. |
+| `cd [pasta]` | Navega entre diretórios (suporta `..` e `~`). |
+| `cat [arquivo]` | Lê o conteúdo de arquivos de texto (.txt, .md). |
+| `weather` | Conecta com satélites (API) para mostrar o clima local. |
+| `whoami` | Mostra o usuário atual da sessão. |
+| `sudo` | Tenta elevar privilégios (Requer senha). |
 
-- [ ] **Phase 3: Integration**
-    - [ ] Hardware/Automation Showcase
-    - [ ] Live Status API (Current coding activity)
-
-## ⚡ Ignition (How to Run)
-
-To start the engine locally:
+## 📦 Como Rodar Localmente
 
 ```bash
-# Clone the repository
-git clone [https://github.com/](https://github.com/)Leonardo027/high-octane-portfolio.git
+# Clone o repositório
+git clone [https://github.com/Leonardo027/high-octane-portfolio.git](https://github.com/Leonardo027/high-octane-portfolio.git)
 
-# Enter the directory
+# Entre na pasta
 cd high-octane-portfolio
 
-# Install dependencies
+# Instale as dependências
 npm install
 
-# Start the dev server
+# Inicie o servidor de desenvolvimento
 npm run dev
