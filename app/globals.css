@@ -1,16 +1,29 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+@import "tailwindcss";
 
-:root {
-  --background: #0b0b0b;
-  --foreground: #ffffff;
-  --neon-yellow: #ccff00;
+/* Configuração do Tema (Cores e Fontes) */
+@theme {
+  --color-neon: #ccff00;
+  --color-void: #0b0b0b;
+  --color-grid: #1a1a1a;
+  --color-alert: #ff3333;
+
+  --font-sans: var(--font-chakra), sans-serif;
+  --font-mono: var(--font-mono), monospace;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
+/* Estilos Globais */
 body {
-  color: var(--foreground);
-  background: var(--background);
-  font-family: Arial, Helvetica, sans-serif; /*Vou mudar dps*/
-  overflow-x: hidden;
+  background-color: var(--color-void);
+  color: white;
+}
+
+/* Utilitário para o Fundo Quadriculado */
+@utility bg-grid-pattern {
+  background-image: linear-gradient(to right, #1a1a1a 1px, transparent 1px),
+    linear-gradient(to bottom, #1a1a1a 1px, transparent 1px);
+  background-size: 40px 40px;
 }

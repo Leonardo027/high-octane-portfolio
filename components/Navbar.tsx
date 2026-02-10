@@ -1,27 +1,27 @@
 "use client";
 
 import { motion } from "framer-motion";
-import { Cpu, Terminal, Zap, FileText } from "lucide-react";
+import { Cpu, Terminal, Zap, Radio } from "lucide-react";
 import Link from "next/link";
 import { useState, useEffect } from "react";
 
 export default function Navbar() {
-  // Estado para o relógio "System Time"
   const [time, setTime] = useState<string>("");
 
   useEffect(() => {
-    // Atualiza o relógio a cada segundo
+    // Atualiza o relógio a cada segundo usando o horário LOCAL do PC
     const interval = setInterval(() => {
       const now = new Date();
-      setTime(now.toISOString().split("T")[1].split(".")[0] + " UTC");
+      // pt-BR garante formato 24h (00:48:00)
+      setTime(now.toLocaleTimeString("pt-BR"));
     }, 1000);
     return () => clearInterval(interval);
   }, []);
 
   const navItems = [
-    { name: "SPECS", path: "#specs", icon: Cpu },      // Sobre/Skills
-    { name: "LOGS", path: "#projects", icon: Terminal }, // Projetos
-    { name: "CONTACT", path: "#contact", icon: Zap },   // Contato
+    { name: "SPECS", path: "#specs", icon: Cpu },
+    { name: "LOGS", path: "#logs", icon: Terminal },
+    { name: "CONTACT", path: "#contact", icon: Zap },
   ];
 
   return (
@@ -32,20 +32,20 @@ export default function Navbar() {
       className="fixed top-0 left-0 w-full z-50 border-b border-white/10 bg-[#0b0b0b]/80 backdrop-blur-md"
     >
       <div className="max-w-7xl mx-auto px-6 h-16 flex items-center justify-between">
-        
-        {/* LOGO / ID */}
+
+        {/* LOGO */}
         <div className="flex items-center gap-2">
-          <div className="w-2 h-6 bg-neon skew-x-[-12deg]" />
-          <Link href="/" className="text-xl font-bold tracking-tighter italic text-white hover:text-neon transition-colors">
-            PORTFOLIO <span className="text-xs not-italic text-gray-500 font-mono">v1.0</span>
+          <Terminal className="text-neon" size={20} />
+          <Link href="/" className="text-lg md:text-xl font-bold tracking-tighter italic text-white hover:text-neon transition-colors flex items-end gap-1">
+            LC_TERMINAL <span className="text-[10px] not-italic text-gray-500 font-mono mb-0.5">v1.0</span>
           </Link>
         </div>
 
-        {/* LINKS CENTRAIS (Desktop) */}
+        {/* MENU DESKTOP */}
         <nav className="hidden md:flex items-center gap-8">
           {navItems.map((item) => (
-            <Link 
-              key={item.name} 
+            <Link
+              key={item.name}
               href={item.path}
               className="flex items-center gap-2 text-sm font-mono text-gray-400 hover:text-white transition-all group"
             >
@@ -57,19 +57,20 @@ export default function Navbar() {
           ))}
         </nav>
 
-        {/* STATUS / TIME */}
-        <div className="hidden md:flex flex-col items-end">
-          <span className="text-[10px] text-neon font-bold tracking-widest uppercase animate-pulse">
-            ● System Active
-          </span>
-          <span className="text-xs font-mono text-gray-500">
-            {time || "INITIALIZING..."}
+        {/* RELÓGIO CORRIGIDO */}
+        <div className="hidden md:flex flex-col items-end font-mono">
+          <div className="flex items-center gap-2 text-[10px] text-neon font-bold tracking-widest uppercase">
+            <Radio size={10} className="animate-pulse" />
+            <span>LC_CORE // ONLINE</span>
+          </div>
+          <span className="text-xs text-gray-500">
+            {time || "LOADING..."}
           </span>
         </div>
 
-        {/* Ícone Menu Mobile */}
+        {/* Ícone Mobile */}
         <div className="md:hidden text-white">
-            <Terminal size={24} />
+          <Terminal size={24} className="text-neon" />
         </div>
       </div>
     </motion.header>
