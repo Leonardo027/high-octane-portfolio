@@ -40,7 +40,7 @@ type CommandType = "input" | "output" | "error" | "success";
 
 interface HistoryItem {
     type: CommandType;
-    content: string | JSX.Element;
+    content: React.ReactNode;
     path?: string;
 }
 
