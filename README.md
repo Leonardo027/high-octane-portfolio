@@ -4,6 +4,15 @@
 
 ![Banner](https://socialify.git.ci/Leonardo027/high-octane-portfolio/image?description=1&font=KoHo&language=1&name=1&owner=1&pattern=Circuit%20Board&theme=Dark)
 
+## 🟢 SYSTEM STATUS: ONLINE
+
+**Acesse o sistema ao vivo aqui:**
+### 🔗 [high-octane-portfolio.vercel.app](https://high-octane-portfolio.vercel.app)
+
+[![Deploy with Vercel](https://vercel.com/button)](https://high-octane-portfolio.vercel.app/)
+
+---
+
 ## 🏴‍☠️ Sobre o Projeto
 
 Este projeto transforma a experiência passiva de navegar em um portfólio numa experiência imersiva de "Hacker". Construído para o **Hack Club**, ele simula um sistema operacional completo no navegador.
