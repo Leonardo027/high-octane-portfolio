@@ -46,7 +46,7 @@ To start the engine locally:
 git clone [https://github.com/](https://github.com/)Leonardo027/high-octane-portfolio.git
 
 # Enter the directory
-cd [NOME-DO-REPO]
+cd high-octane-portfolio
 
 # Install dependencies
 npm install
