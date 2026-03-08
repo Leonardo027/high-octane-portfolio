@@ -7,7 +7,7 @@ const education = [
     {
         school: "FEMA (Fundação Educacional do Município de Assis)",
         course: "Bacharelado em Ciência da Computação",
-        period: "2025 - Presente",
+        period: "2026 - Presente",
         desc: "Aprofundamento em arquitetura de software, algoritmos complexos e gestão de projetos tecnológicos.",
         icon: GraduationCap,
         status: "LOADING..."
