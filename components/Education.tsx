@@ -15,7 +15,7 @@ const education = [
     {
         school: "SENAI",
         course: "Técnico em Análise e Desenvolvimento de Sistemas",
-        period: "2023 - 2025",
+        period: "2024 - 2025",
         desc: "Formação intensiva prática. Foco em lógica de programação, banco de dados SQL, C# e infraestrutura de redes.",
         icon: Award,
         status: "COMPLETED"
